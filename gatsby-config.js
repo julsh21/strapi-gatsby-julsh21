@@ -9,6 +9,17 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: "http://localhost:1337",
+        collectionTypes: [
+          // Lista de tipos de contenido que tenemos en Strapi, en singular
+          "books"
+        ],
+        queryLimit: 1000,
+      },
+     },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

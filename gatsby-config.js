@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: "http://localhost:1337",
+        apiURL: "https://strapi-gatsby-julsh21.herokuapp.com",
         collectionTypes: [
           // Lista de tipos de contenido que tenemos en Strapi, en singular
           "books"
